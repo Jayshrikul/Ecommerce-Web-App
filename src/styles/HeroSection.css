@@ -1,0 +1,80 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  gap: 40px;
+  min-height: 90vh;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #2d2d2d;
+}
+
+.hero-text h2 span {
+  background: linear-gradient(90deg, #d48a62, #f3b49f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #6a6a6a;
+}
+
+.shop-btn {
+  display: inline-block;
+  background: #d48a62;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shop-btn:hover {
+  background: #b8724f;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0px 6px 18px rgba(212, 138, 98, 0.4);
+}
+
+.hero-fashion {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-fashion img {
+  max-width: 420px;
+  height: auto;          /* ✅ keeps aspect ratio */
+  object-fit: contain;   /* ✅ no stretching or cropping */
+  border-radius: 16px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .hero-fashion img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
