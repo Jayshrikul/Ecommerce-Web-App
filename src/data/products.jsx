@@ -17,8 +17,9 @@ import cloth2 from "../assets/Clothing/trenchcoat.jpg";
 import cloth3 from "../assets/Clothing/formalset2.jpg";
 // ------- Accessories -------
 import acc1 from "../assets/accessories/jwelesset1.jpg";
-import acc2 from "../assets/accessories/shoulderbag.jpg";
+import acc2 from "../assets/accessories/shoulderbag-new.jpg";
 import acc3 from "../assets/accessories/DiamondRing.jpg"
+
 
 //---------Footwear --------
 import shoes1 from "../assets/Footwear/Beautifulsandal.jpg";
