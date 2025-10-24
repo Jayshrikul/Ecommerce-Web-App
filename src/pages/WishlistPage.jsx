@@ -1,6 +1,6 @@
 import React from "react";
-import {useWishlist } from "../context/WishlistContext";
-import ProductCard from "../components/ProductCard";
+import {useWishlist } from "../context/Wishlistcontext";
+import Productcard from "../components/Productcard";
 
 const Wishlistpage = ({ onAddToCart }) => {
   const { wishlist } = useWishlist(); 
@@ -12,7 +12,7 @@ const Wishlistpage = ({ onAddToCart }) => {
       ) : (
         <div className="wishlist-grid">
           {wishlist.map((item) => (
-            <ProductCard
+            <Productcard
               key={item.id}
               product={item}
               onAddToCart={onAddToCart}

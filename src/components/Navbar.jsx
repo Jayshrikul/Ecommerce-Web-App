@@ -30,7 +30,7 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
     setSuggestions(matches.slice(0, 5)); // show top 5
   };
 
-  // ✅ Handle Enter key → go to SearchResults page
+  // ✅ Handle Enter key → go to Searchresults page
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       e.preventDefault();

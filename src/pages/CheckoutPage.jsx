@@ -1,9 +1,9 @@
 import React from "react";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/Cartcontext";
 import { useNavigate } from "react-router-dom";
-import "../styles/CheckoutPage.css";
+import "../styles/Checkoutpage.css";
 
-const CheckoutPage = () => {
+const Checkoutpage = () => {
   const { cart, clearCart } = useCart();
   const navigate = useNavigate();
 
@@ -62,4 +62,4 @@ const CheckoutPage = () => {
   );
 };
 
-export default CheckoutPage;
+export default Checkoutpage;

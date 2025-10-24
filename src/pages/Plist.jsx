@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { products as productsData } from "../data/products"; // ✅ import
-import ProductCard from "../components/ProductCard";
+import Productcard from "../components/Productcard";
 import "../styles/Plist.css";
 
 const Plist = ({ products = productsData, onAddToCart, onWishlistToggle }) => {
@@ -76,7 +76,7 @@ const Plist = ({ products = productsData, onAddToCart, onWishlistToggle }) => {
       <div className="product-grid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
-            <ProductCard
+            <Productcard
               key={product.id}
               product={product}
               onAddToCart={onAddToCart}

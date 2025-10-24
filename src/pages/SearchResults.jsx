@@ -1,10 +1,10 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { products } from "../data/products";
-import ProductCard from "../components/ProductCard";
-import "../styles/SearchResult.css"; 
+import Productcard from "../components/Productcard";
+import "../styles/Searchresult.css"; 
 
-const SearchResults = ({ searchQuery }) => {
+const Searchresults = ({ searchQuery }) => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const queryFromUrl = queryParams.get("query")?.toLowerCase() || "";
@@ -27,7 +27,7 @@ const SearchResults = ({ searchQuery }) => {
       <div className="products-grid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <Productcard key={product.id} product={product} />
           ))
         ) : (
           <p className="search-message">No products found 🚫</p>
@@ -37,4 +37,4 @@ const SearchResults = ({ searchQuery }) => {
   );
 };
 
-export default SearchResults;
+export default Searchresults;

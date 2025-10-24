@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { FaShoppingCart, FaPlus, FaMinus, FaHeart } from "react-icons/fa";
-import { useWishlist } from "../context/WishlistContext";
-import { useCart } from "../context/CartContext";
-import "../styles/ProductCard.css";
+import { useWishlist } from "../context/Wishlistcontext";
+import { useCart } from "../context/Cartcontext";
+import "../styles/Productcard.css";
 
-const ProductCard = ({ product }) => {
+const Productcard = ({ product }) => {
   const [quantity, setQuantity] = useState(0);
   const [isOpen, setIsOpen] = useState(false); 
 
@@ -102,4 +102,4 @@ const ProductCard = ({ product }) => {
   );
 };
 
-export default ProductCard;
+export default Productcard;

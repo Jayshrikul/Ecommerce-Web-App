@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 
-const ProfileContext = createContext();
+const Profilecontext = createContext();
 
 export const ProfileProvider = ({ children }) => {
   const [profile, setProfile] = useState({
@@ -21,10 +21,10 @@ export const ProfileProvider = ({ children }) => {
   };
   
   return (
-    <ProfileContext.Provider value={{ profile, updateProfile }}>
+    <Profilecontext.Provider value={{ profile, updateProfile }}>
       {children}
-    </ProfileContext.Provider>
+    </Profilecontext.Provider>
   );
 };
 
-export const useProfile = () => useContext(ProfileContext);
+export const useProfile = () => useContext(Profilecontext);

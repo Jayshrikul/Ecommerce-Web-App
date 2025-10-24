@@ -1,12 +1,14 @@
-import { useNavigate } from "react-router-dom";
+import gownCover from "../assets/Categorycovers/dresses.jpg";
+import topsCover from "../assets/Categorycovers/tops.jpg";
+import accCover from "../assets/Categorycovers/accessories.jpg";
 
-function ShopByCategory() {
+function Shopbycategory() {
   const navigate = useNavigate();
 
   const categories = [
-    { name: "Gowns", img: "/assets/Categorycovers/dresses.jpg" },
-    { name: "Tops", img: "/assets/Categorycovers/tops.jpg" },
-    { name: "Accessories", img: "/assets/Categorycovers/accessories.jpg" },
+    { name: "Gowns", img: gownCover },
+    { name: "Tops", img: topsCover },
+    { name: "Accessories", img: accCover },
   ];
 
   return (
@@ -33,4 +35,4 @@ function ShopByCategory() {
   );
 }
 
-export default ShopByCategory;
+export default Shopbycategory;

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";   
 import App from "./App";
-import { ProfileProvider } from "./context/ProfileContext"; 
+import { ProfileProvider } from "./context/Profilecontext"; 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

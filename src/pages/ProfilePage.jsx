@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useProfile } from "../context/ProfileContext";
-import "../styles/ProfilePage.css"; // create this file for styling
+import { useProfile } from "../context/Profilecontext";
+import "../styles/Profilepage.css"; // create this file for styling
 
-const ProfilePage = () => {
+const Profilepage = () => {
   const { profile, updateProfile } = useProfile();
   const [form, setForm] = useState({
     name: "",
@@ -62,4 +62,4 @@ const ProfilePage = () => {
   );
 };
 
-export default ProfilePage;
+export default Profilepage;

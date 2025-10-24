@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../data/products";
-import ProductCard from "../components/ProductCard";
+import Productcard from "../components/Productcard";
 
-function CategoryPage() {
+function Categorypage() {
   const { categoryName } = useParams();
 
   // normalize category (handles dashes & lowercase)
@@ -21,7 +21,7 @@ function CategoryPage() {
   <div className="product-grid">
     {filteredProducts.length > 0 ? (
       filteredProducts.map((product) => (
-        <ProductCard key={product.id} product={product} />
+        <Productcard key={product.id} product={product} />
       ))
     ) : (
       <p>No products found.</p>
@@ -29,4 +29,4 @@ function CategoryPage() {
   </div>
 </div>
 )};
-export default CategoryPage;
+export default Categorypage;

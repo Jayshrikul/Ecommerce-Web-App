@@ -1,7 +1,7 @@
 import React from "react";
 import {useNavigate, Link } from "react-router-dom";
 import "../styles/Home.css";
-import ShopByCategory from "../components/ShopByCategory";
+import Shopbycategory from "../components/Shopbycategory";
 import { products } from "../data/products";
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
       </section>
 
       {/* Categories Section */}
-      <ShopByCategory />
+      <Shopbycategory />
 
       {/* Featured Products */}
       <section className="featured-products">

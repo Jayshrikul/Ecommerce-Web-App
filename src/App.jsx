@@ -2,15 +2,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Plist from "./pages/Plist";
-import Cart from "./pages/CartPage";
+import Cart from "./pages/Cartpage";
 import Wishlist from "./pages/WishlistPage";
-import Profile from "./pages/ProfilePage";
-import { CartProvider } from "./context/CartContext";
-import SearchResults from "./pages/SearchResults";
+import Profile from "./pages/Profilepage";
+import { CartProvider } from "./context/Cartcontext";
+import Searchresults from "./pages/Searchresults";
 import { products } from "./data/products";
-import { WishlistProvider } from "./context/WishlistContext";
+import { WishlistProvider } from "./context/Wishlistcontext";
 import { useState } from "react";
-import CheckoutPage from "./pages/CheckoutPage";
+import CheckoutPage from "./pages/Checkoutpage";
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -29,7 +29,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/search" element={<SearchResults searchQuery={searchQuery} />} />
+            <Route path="/search" element={<Searchresults searchQuery={searchQuery} />} />
             <Route path="/Checkout" element={<CheckoutPage />}/>
           </Routes>
         </Router>
