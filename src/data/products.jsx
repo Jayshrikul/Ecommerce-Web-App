@@ -1,38 +1,3 @@
-// ------- Gowns -------
-import gown1 from "../assets/gowns/gown1.jpg";
-import gown2 from "../assets/gowns/gown2.jpg";
-import gown3 from "../assets/gowns/gown3.jpg";
-import gown4 from "../assets/gowns/gown4.jpg";
-import gown5 from "../assets/gowns/gown5.jpg";
-import gown6 from "../assets/gowns/gown6.jpg";
-import gown7 from "../assets/gowns/gown7.jpg";
-// ------- Tops -------
-import top1 from "../assets/tops/shirt.jpg";
-import top2 from "../assets/tops/Cowboyjacket.jpg"
-import top3 from "../assets/tops/BlazerlongSleeves.jpg";
-
-//--------Clothing--------
-import cloth1 from "../assets/Clothing/formalset.jpg";
-import cloth2 from "../assets/Clothing/trenchcoat.jpg";
-import cloth3 from "../assets/Clothing/formalset2.jpg";
-// ------- Accessories -------
-import acc1 from "../assets/accessories/jwelesset1.jpg";
-import acc2 from "../assets/accessories/shoulderbag-new.jpg";
-import acc3 from "../assets/accessories/DiamondRing.jpg"
-
-
-//---------Footwear --------
-import shoes1 from "../assets/Footwear/Beautifulsandal.jpg";
-import shoes2 from "../assets/Footwear/heelsshoes.jpg";
-import shoes3 from "../assets/Footwear/Loafer.jpg"; 
-import shoes4 from "../assets/Footwear/shoes.jpg"; 
-import shoes5 from "../assets/Footwear/Sneakers.jpg"; 
-import shoes6 from "../assets/Footwear/whiteflats.jpg"; 
-import shoes7 from "../assets/Footwear/yellowflats.jpg"; 
-import shoes8 from "../assets/Footwear/ziperboots.jpg"; 
-import shoes9 from "../assets/Footwear/blackboots.jpg"; 
- 
-
 export const products = [
   // Gowns
   {
@@ -40,14 +5,14 @@ export const products = [
     name: "Gown",
     category: "Gowns",
     price: 2500,
-    image: gown1,
+    image: "/assets/gowns/gown1.jpg",
   },
   {
     id: 2,
     name: "Pretty pink Gown",
     category: "Gowns",
     price: 3000,
-    image: gown2,
+    image: "/assets/gowns/gown2.jpg",
    
   },
   {
@@ -55,14 +20,14 @@ export const products = [
     name: "Gown",
     category: "Gowns",
     price: 3500,
-    image: gown3,
+    image: "/assets/gowns/gown3.jpg",
   },
    {
     id: 4,
     name: "Blue Gown" ,
     category: "Gowns",
     price: 1200,
-    image: gown4,
+    image: "/assets/gowns/gown4.jpg",
     
   },
 {
@@ -70,7 +35,7 @@ export const products = [
     name: "Halter Neck gown",
     category: "Gowns",
     price: 2500,
-    image: gown5,
+    image:"/assets/gowns/gown5.jpg",
   
   },
   {
@@ -78,7 +43,7 @@ export const products = [
     name: "Elegant Black",
     category: "Gowns",
     price: 2000,
-    image: gown6,
+    image:"/assets/gowns/gown6.jpg",
      isNew:true,
   },
   {
@@ -86,7 +51,7 @@ export const products = [
     name: "Elegant Gown",
     category: "Gowns",
     price: 3000,
-    image: gown7,
+    image: "/assets/gowns/gown7.jpg",
   
   },
 
@@ -97,7 +62,7 @@ export const products = [
     name: "Trendy Crop Top",
     category: "Tops",
     price: 800,
-    image: top1,
+    image: "/assets/tops/shirt.jpg",
   },
   
 
@@ -107,7 +72,7 @@ export const products = [
     name: "Jewellery Set",
     category: "Accessories",
     price: 1200,
-    image: acc1,
+    image: "/assets/accessories/jwelesset1.jpg",
   },
   
    {
@@ -115,7 +80,7 @@ export const products = [
     name: "Cowboy Jacket",
     category: "Tops",
     price: 1200,
-    image: top2,
+    image: "/assets/tops/cowboyjacket.jpg",
     isNew: true, 
   },
   
@@ -124,7 +89,7 @@ export const products = [
     name: "Trendy Bag ",
     category: "accessories",
     price: 1200,
-    image: acc2,
+    image: "/assets/accessories/shoulderbag-new.jpg",
     isNew: true, 
   },
   
@@ -133,7 +98,7 @@ export const products = [
     name: "Blazer",
     category: "tops",
     price: 1200,
-    image: top3,
+    image: "/assets/tops/blazerlongsleeves.jpg",
     isNew: true, 
   },
 //------Clothing------
@@ -142,7 +107,7 @@ export const products = [
     name: "Formal Set ",
     category: "Clothing",
     price: 1200,
-    image: cloth1,
+    image: "/assets/Clothing/formalset.jpg",
     isNew: true, 
   },
   
@@ -151,7 +116,7 @@ export const products = [
     name: "Trench Coat" ,
     category: "Clothing",
     price: 1200,
-    image: cloth2,
+    image: "/assets/Clothing/trenchcoat.jpg",
     isNew: true, 
   },
    {
@@ -159,7 +124,7 @@ export const products = [
     name: "Formal set" ,
     category: "Clothing",
     price: 1200,
-    image: cloth3,
+    image: "/assets/Clothing/formalset2.jpg",
     isNew: true, 
   },
 
@@ -170,7 +135,7 @@ export const products = [
     name: "Stylish Heels",
     category: "Footwear",
     price: 1300,
-    image: shoes1,
+    image: "/assets/Footwear/beautifulsandal.jpg",
    
   },
    
@@ -179,7 +144,7 @@ export const products = [
     name: "Heels shoes",
     category: "Footwear",
     price: 1200,
-    image: shoes2,
+    image: "/assets/Footwear/heelsshoes.jpg",
    
 
   },
@@ -188,7 +153,7 @@ export const products = [
     name: "Loafer",
     category: "Footwear",
     price: 2000,
-    image: shoes3,
+    image: "/assets/Footwear/loafer.jpg",
   
   },
    {
@@ -196,7 +161,7 @@ export const products = [
     name: "shoes",
     category: "Footwear",
     price: 1700,
-    image: shoes4,
+    image:"/assets/Footwear/shoes.jpg",
   
   },
 {
@@ -204,7 +169,7 @@ export const products = [
     name: "Sneakers",
     category: "Footwear",
     price: 2000,
-    image: shoes5,
+    image: "/assets/Footwear/sneakers.jpg",
   
   },
 {
@@ -212,7 +177,7 @@ export const products = [
     name: "Flats",
     category: "Footwear",
     price: 900,
-    image: shoes6,
+    image:"/assets/Footwear/whiteflats.jpg",
   
   },
 {
@@ -220,7 +185,7 @@ export const products = [
     name: "Flats",
     category: "Footwear",
     price: 1200,
-    image: shoes7,
+    image:"/assets/Footwear/yellowflats.jpg",
   
   },
 {
@@ -228,7 +193,7 @@ export const products = [
     name: "Ziper Boots",
     category: "Footwear",
     price: 2500,
-    image: shoes8,
+    image: "/assets/Footwear/ziperboots.jpg",
      isNew:true,
   },
 {
@@ -236,7 +201,7 @@ export const products = [
     name: "Boots",
     category: "Footwear",
     price: 2000,
-    image: shoes9,
+    image: "/assets/Footwear/blackboots.jpg",
 
   
   },
@@ -245,7 +210,7 @@ export const products = [
     name: "Diamond Ring",
     category: "accessories",
     price: 49609,
-    image: acc3,
+    image: "/assets/accessories/diamondring.jpg",
     isNew: true,
   
   },

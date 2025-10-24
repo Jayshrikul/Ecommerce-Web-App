@@ -1,5 +1,5 @@
 import React from "react";
-import { useWishlist } from "../context/Wishlistcontext";
+import {useWishlist } from "../context/WishlistContext";
 import ProductCard from "../components/ProductCard";
 
 const Wishlistpage = ({ onAddToCart }) => {

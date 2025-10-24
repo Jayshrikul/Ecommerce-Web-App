@@ -8,14 +8,14 @@ import Profile from "./pages/ProfilePage";
 import { CartProvider } from "./context/CartContext";
 import SearchResults from "./pages/SearchResults";
 import { products } from "./data/products";
-import { WishlistProvider } from "./context/Wishlistcontext";
+import { WishlistProvider } from "./context/WishlistContext";
 import { useState } from "react";
 import CheckoutPage from "./pages/CheckoutPage";
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
 
-  return (
+  return (   
     <WishlistProvider>
       <CartProvider>
         <Router>
@@ -24,14 +24,10 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
-
-           
             <Route path="/category/:categoryName" element={<Plist products={products} />} />
-
-            
+            <Route path="/category/all" element={<Plist />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/wishlist" element={<Wishlist />} />
-
             <Route path="/profile" element={<Profile />} />
             <Route path="/search" element={<SearchResults searchQuery={searchQuery} />} />
             <Route path="/Checkout" element={<CheckoutPage />}/>

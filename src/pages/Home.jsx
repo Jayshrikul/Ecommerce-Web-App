@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {useNavigate, Link } from "react-router-dom";
 import "../styles/Home.css";
 import ShopByCategory from "../components/ShopByCategory";
 import { products } from "../data/products";
 
 const Home = () => {
+ const navigate = useNavigate();
+
   return (
     <div className="home">
       {/* Hero Section */}
@@ -13,7 +15,9 @@ const Home = () => {
           <h1>Casual Elegance, Everyday Style</h1>
           <p>Discover seasonal trends and timeless outfits made for you.</p>
           <Link to="/plist">
-            <button className="shop-btn">Shop Now</button>
+            <button className="shop-btn" onClick={() => navigate("/products")}>
+          Shop Now
+        </button>
           </Link>
         </div>
       </section>

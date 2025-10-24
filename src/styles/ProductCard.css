@@ -131,6 +131,8 @@
 
 .wishlist-icon.active {
   color: #ff3f6c; 
+}
+
 .wishlist-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -208,5 +210,4 @@
 @keyframes zoomIn {
   from { transform: scale(0.8); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
-}
 }

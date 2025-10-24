@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { FaShoppingCart, FaPlus, FaMinus, FaHeart } from "react-icons/fa";
-import { useWishlist } from "../context/Wishlistcontext";
+import { useWishlist } from "../context/WishlistContext";
 import { useCart } from "../context/CartContext";
 import "../styles/ProductCard.css";
 
 const ProductCard = ({ product }) => {
   const [quantity, setQuantity] = useState(0);
-  const [isOpen, setIsOpen] = useState(false); // ✅ added state for modal
+  const [isOpen, setIsOpen] = useState(false); 
 
   const { wishlist, toggleWishlist } = useWishlist();
   const { addToCart } = useCart();

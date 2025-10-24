@@ -1,17 +1,12 @@
 import { useNavigate } from "react-router-dom";
 
-
-import gownCover from "../assets/categoryCovers/dresses.jpg";
-import topsCover from "../assets/categoryCovers/tops.jpg";
-import accCover from "../assets/categoryCovers/accessories.jpg";
-
 function ShopByCategory() {
   const navigate = useNavigate();
 
   const categories = [
-    { name: "Gowns", img: gownCover },
-    { name: "Tops", img: topsCover },
-    { name: "Accessories", img: accCover },
+    { name: "Gowns", img: "/assets/Categorycovers/dresses.jpg" },
+    { name: "Tops", img: "/assets/Categorycovers/tops.jpg" },
+    { name: "Accessories", img: "/assets/Categorycovers/accessories.jpg" },
   ];
 
   return (
